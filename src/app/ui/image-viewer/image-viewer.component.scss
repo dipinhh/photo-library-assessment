@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+.image-viewer{
+    img{
+        width: 500px;
+        cursor: pointer;
+    }
+}
+
+.remove-btn{
+button{
+    width: 200px;    
+    border-radius: 0;
+    background: $button-background;
+    color: #fff;
+    }
+}

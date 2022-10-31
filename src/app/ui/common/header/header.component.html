@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="header">
+   <div class="row w-100 header-area">
+    <div class="col-6 text-end">
+        <button mat-icon-button [routerLink]="['photos']" [routerLinkActive]="['active']"> Photos</button>
+    </div>
+    <div class="col-6 text-start">
+        <button mat-icon-button [routerLink]="['favorites']" [routerLinkActive]="['active']">Favorites</button>
+    </div>
+   </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>

@@ -1,0 +1,14 @@
+<div class="all-photos-area m-5">
+    <cdk-virtual-scroll-viewport #scroller itemSize="72" class="content">
+        <div class="row">
+            <ng-container *cdkVirtualFor="let item of imageList">
+                <div class="col-md-4 mb-4 image-area">
+                    <img  [src]="item.image" (click)="onImageClick(item)">
+                </div>    
+            </ng-container>
+            <div class="spinner-item">
+                <mat-progress-spinner [mode]="'indeterminate'" [diameter]="50"></mat-progress-spinner>
+              </div>
+        </div>        
+    </cdk-virtual-scroll-viewport>
+</div>

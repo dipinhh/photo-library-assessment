@@ -1,0 +1,16 @@
+.content {
+    height: calc(100vh - 150px);
+    overflow: auto;
+}
+
+.spinner-item {
+    display: grid;
+    place-items: center;
+    margin-top: 10px;
+}
+.image-area{
+    img{
+        width: 100%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,11 @@
+<div class="m-5">
+        <div class="row">
+            <ng-container *ngFor="let item of imageList">
+                <div class="col-md-4 mb-4 image-area">
+                    <img  [src]="item.image" (click)="onFavoritesImageClick(item);">
+                </div>    
+            </ng-container>
+            <div class="spinner-item">
+              </div>
+        </div>        
+</div>
